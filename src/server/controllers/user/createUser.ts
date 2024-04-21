@@ -6,7 +6,7 @@ import { UserRequestBody } from "../../../types/interfaces";
 const prisma = new PrismaClient();
 
 export const createUser = async (ctx: Context) => {
-    const { name, email, password, organizationId } = ctx.request.body as UserRequestBody;
+    const { name, email, password } = ctx.request.body as UserRequestBody;
 
     if (!email || !password) {
         ctx.status = 400;
@@ -24,9 +24,6 @@ export const createUser = async (ctx: Context) => {
                 email,
                 password: hashedPassword,
                 admin: false,
-                organization: {
-                    connect: { id: organizationId },
-                }
             },
         });
 
