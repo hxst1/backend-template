@@ -1,6 +1,6 @@
 # Backend
 
-This project is the backend of [Project or System Name], built with Koa and TypeScript, using Prisma as an ORM to interact with a PostgreSQL database hosted in Docker.
+This is the backend server for the application, built with Koa and Prisma. The server provides a RESTful API for the frontend to interact with, including endpoints for user authentication, creating and managing tasks, and more.
 
 ## Project Structure
 
