@@ -32,7 +32,7 @@ Before getting started, make sure you have the following installed:
 1. **Clone the Repository**
 
    ```sh
-   git clone [Repository URL] && cd backend
+   git clone https://github.com/hxst1/backend-template && cd backend-template
    ```
    
 2. **Install Dependencies**
